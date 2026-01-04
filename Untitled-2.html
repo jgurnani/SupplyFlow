@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        h2 {
+            color: #34495e;
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .feature-item {
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-item:hover {
+            background: #e8f4f8;
+            transform: translateX(5px);
+        }
+        
+        .feature-item::before {
+            content: "✓";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+                border-radius: 8px;
+            }
+            
+            h1 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            h2 {
+                font-size: 20px;
+                margin-top: 25px;
+            }
+            
+            .feature-item {
+                padding: 10px 12px;
+                font-size: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 22px;
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+            
+            .feature-item {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Features Document</h1>
+        
+        <div class="section">
+            <h2>4. Credit & Accounting</h2>
+            <ul class="feature-list">
+                <li class="feature-item">Credit limit per client</li>
+                <li class="feature-item">Real-time credit availability</li>
+                <li class="feature-item">Auto invoice generation</li>
+                <li class="feature-item">Client ledger</li>
+                <li class="feature-item">Outstanding balance</li>
+                <li class="feature-item">Payment terms (7/15/30 days)</li>
+                <li class="feature-item">Aging reports</li>
+                <li class="feature-item">Returns & adjustments</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
